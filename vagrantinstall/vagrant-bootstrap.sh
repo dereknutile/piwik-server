@@ -69,7 +69,7 @@ inst 'Nginx' nginx
 sudo cat > /etc/nginx/sites-available/default <<'EOF'
 server {
   server_name localhost;
-  root /vagrant/project/public;
+  root /vagrant/public;
   sendfile off;
 
   gzip_static on;
