@@ -11,3 +11,5 @@
 /pkg/*
 /tmp
 /vendor
+
+/public/piwik
