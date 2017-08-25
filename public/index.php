@@ -48,9 +48,10 @@
   <body>
     <div class="container">
       <div class="content">
-        <div class="title"><?php echo "Your Vagrant LEMP installation is good to go!"; ?></div>
-        <p>This index.php file is located in the root of this installation under <code>/public/</code>.  You can delete this index.php file and start developing your code in the public directory now!</p>
-        <p>The <a href="https://github.com/dereknutile/vlemp" target="_blank">VLEMP Github repository</a> has more information about the default server configuration, installed software, and tools.</p>
+        <div class="title"><?php echo "Piwik on VLEMP"; ?></div>
+        <p>This is the main <a href="https://github.com/dereknutile/vlemp" target="_blank">VLEMP</a> index page.  The source code for this file is located in the root of this installation under <code>/public/</code>.</p>
+        <p><a href="/piwik/index.php">Navigate here to access the local Piwik installation.</a></p>
+        <p>Optionally, read <a href="How to install Piwik.html">How to install Piwik.html</a>.</p>
       </div><!-- /.content -->
     </div><!-- /.container -->
   </body>
