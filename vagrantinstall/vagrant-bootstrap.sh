@@ -38,6 +38,9 @@ inst 'Build Essentials Development Tools' build-essential
 
 # Install make
 inst 'Make' make
+
+# Install unzip
+inst 'Unzip' unzip
 ################################################################################
 
 
@@ -47,11 +50,6 @@ inst 'NodeJS' nodejs
 
 # Install the Node Package Manager
 inst 'Node Package Manager' npm
-
-# install With Bower, Grunt, and Gulp here
-npm install -g bower
-npm install -g grunt
-npm install -g gulp
 ################################################################################
 
 
@@ -73,6 +71,7 @@ server {
   sendfile off;
 
   gzip_static on;
+
   location = /favicon.ico {
     log_not_found off;
     access_log off;
@@ -149,7 +148,7 @@ debconf-set-selections <<< 'mysql-server mysql-server/root_password_again passwo
 # inst 'MySQL Client Core' mysql-clienpt-core-5.5
 inst 'MySQL Server' mysql-server
 inst 'MySQL Client Library' libmysqlclient-dev
-echo "create database laraveldb" | mysql -uroot -proot
+echo "create database analytics" | mysql -uroot -proot
 ################################################################################
 
 

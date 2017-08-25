@@ -14,6 +14,7 @@ MEMORY = 2048
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.box = VM_BOX
     config.vm.provision :shell, path: VAGRANT_SCRIPT_DIR+"/vagrant-bootstrap.sh"
+    config.vm.provision :shell, path: VAGRANT_SCRIPT_DIR+"/install-piwik.sh"
 
     # Script an installation like Symfony or Laravel and add it here
     # config.vm.provision :shell, path: VAGRANT_BIN_DIR+"/install-something.sh", privileged: false
